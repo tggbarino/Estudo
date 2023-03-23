@@ -1,0 +1,38 @@
+/*Cores utilizadas:
+#806F06 #FFE433  #CCB415  #110080  #2C14CC 
+Justificativa: A cor amarela representa principalmente a criatividade em cima do tema escolhido referenciando o que pode ser feito com o uso da linguagem empregada. 
+Já a cor azul em contraste, indica segurança como no uso da tecnologia influenciando também a pessoa em que visualizar o site ficar mais tempo lendo sobre o assunto. 
+Esquema de cores: Complementar, indicando o contraste buscando entre criatividade(cor amarela) e segurança (cor azul) a7o ler o tema  do site.
+*/
+.tituloPagina{
+    background-color: #FFE433;
+    transition-duration: 1s;
+    text-align: center;
+    font-family: ;
+    
+}
+.paragrafo{
+    background-color:#2C14CC;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+body{
+    background-color: #2C14CC;
+}
+.exemplos{
+    background-color: #FFE433;
+    transition-duration: 1s;
+    width:40%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.exemplos:hover{
+    width:100%;
+}
+.fonte{
+    background-color: #FFE433;
+    width: 30%;
+}
+.tiposAplicativos{
+    background-color: #FFE433;
+    width: 27%;
+}

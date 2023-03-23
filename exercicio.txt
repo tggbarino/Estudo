@@ -1,0 +1,6 @@
+1 - Complementar
+
+2 e 3- Tema JavaScript, onde indica um pouco da história do JS e onde é mais usado atualmente. A cor amarela representa principalmente a criatividade em cima do tema escolhido referenciando o que pode ser feito com o uso da linguagem empregada. 
+Já a cor azul em contraste, indica segurança como no uso da tecnologia influenciando também a pessoa em que visualizar o site ficar mais tempo lendo sobre o assunto. 
+4 - Complementar, indicando o contraste buscando entre criatividade(cor amarela) e segurança (cor azul) ao ler o tema  do site.
+5 - #806F06 #FFE433  #CCB415  #110080  #2C14CC 
