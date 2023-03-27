@@ -1,0 +1,11 @@
+DROP DATABASE reserva;
+select a.nome,e.nome from animais a, empregados e where idcuidador = idempregado;
+select c.nome from clientes c,provedores p where c.idCliente = p.idCliente;
+
+select a.nome, a.dataSaida, ea.descricao 
+from animais a, eventoanimais ea 
+where a.idAnimal = ea.idAnimal and descricao='Falecimento'; 
+
+select a.nome, a.dataNascimento, a.idCuidador, m.descricao
+from animais a, medicacao m
+where a.idMedicacao = m.idMedicacao and descricao is not null;
