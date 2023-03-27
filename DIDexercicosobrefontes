@@ -22,3 +22,28 @@
 .destaque{
     font-style: italic;
 }
+
+
+///
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="principal">
+    <h1 class='titulo'>Teoria das cores</h1>
+    <p>Seu site ou blog não aparece nos resultados de busca? Seus textos são pobres e sem direcionamento? Você tem dificuldade em encontrar sinônimos ou não tem paciência para gerar resumos de textos gigantescos?
+    Se sua resposta foi sim para um destes problemas, <span class="destaque">ê está no lugar certo.1</span></p>
+    <p>Gera o texto automaticamente e envia por e-mail podendo também ser postado diretamente em seu blog.</p>
+    <h2 class="subtitulo">Como aplicar a cor no seu layout?</h2>
+    <p>Gera o resumo de um texto,<span class="destaque"> ótimo para captar a atenção dos usuários antes dos mesmos clicarem e irem até a postagem completa.</span></p>
+    <p>Gera textos fazendo alterações na ordem das frases e organizando o seu conteúdo de maneira didática.</p>
+    </div>
+</body>
+</html>
