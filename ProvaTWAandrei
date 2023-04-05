@@ -1,0 +1,114 @@
+# Estudo
+
+var tabuada = document.querySelectorAll(".questao1 a");
+var h1 = document.querySelector(".resposta h1");
+var h2 = document.createElement("h2");
+
+tabuada.forEach(element=>{
+    
+    element.addEventListener("click",function(event){
+         h2.textContent=" ";
+        var conta=" ";
+    
+        for (let i = 1; i <= 9; i++) {
+            conta+=event.target.textContent +" x "+i+" = "+event.target.textContent*i+" "+ "\n";
+        }
+        console.log(conta);
+        h2.textContent=conta;
+        // adciona o h2 embaixo do h1
+        h1.insertAdjacentElement("afterend",h2);       
+        // ajusta o tamanho do h2
+        h2.style.width="100px";
+    });
+    
+    
+});
+
+
+
+
+
+// questão 2
+var btn1 = document.querySelector(".btn1");
+
+
+
+var diasMes = document.querySelectorAll(".mes td");
+
+btn1.addEventListener("click", function(event){
+    event.preventDefault();
+    var caixa1=document.querySelector(".caixa1").value;
+
+    diasMes.forEach(element=>{
+        if(element.classList.contains("destaque")){
+            element.classList.remove("destaque");
+        }
+    });
+    
+    diasMes.forEach(element => {
+        
+        if(element.innerText==caixa1  ){
+            element.classList.add("destaque");
+           
+            
+            
+            
+        }
+        
+    });
+
+
+
+})
+// questão 2 B
+
+var btn2=document.querySelector(".btn2");
+
+btn2.addEventListener("click",function(event){
+event.preventDefault()
+var caixaPrimeiroDia= document.querySelector(".caixaPrimeiroDia").value;
+var caixaSegundoDia=document.querySelector(".caixaSegundoDia").value;
+        
+diasMes.forEach(element=>{
+    if(element.classList.contains("destaque")||element.classList.contains("destaque2")||element.classList.contains("destaque3")){
+        element.classList.remove("destaque");
+        element.classList.remove("destaque2");
+        element.classList.remove("destaque3");
+    }
+});
+        
+    diasMes.forEach(element => {
+        
+        if(element.innerHTML==parseInt(caixaPrimeiroDia)|| element.innerHTML==parseInt(caixaSegundoDia)){
+            element.classList.add("destaque3");
+        }
+
+        if(element.innerHTML>parseInt(caixaPrimeiroDia) && element.innerHTML<parseInt(caixaSegundoDia)){
+            
+            element.classList.add("destaque2");
+            
+
+        }
+
+    });
+
+});
+
+// questão 3
+
+var img = document.querySelector(".questao3 img")
+var contaImagem=1;
+img.style.cursor="pointer";
+img.style.borderRadius="5px";
+img.addEventListener("click", function(){
+    contaImagem++;
+    
+    if(contaImagem>3){
+        contaImagem=1;
+    }
+    console.log(contaImagem);
+    img.src="./img/img"+contaImagem+".jpg";
+
+
+
+});
