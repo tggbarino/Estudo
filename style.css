@@ -1,38 +1,57 @@
-/*Cores utilizadas:
-#806F06 #FFE433  #CCB415  #110080  #2C14CC 
-Justificativa: A cor amarela representa principalmente a criatividade em cima do tema escolhido referenciando o que pode ser feito com o uso da linguagem empregada. 
-Já a cor azul em contraste, indica segurança como no uso da tecnologia influenciando também a pessoa em que visualizar o site ficar mais tempo lendo sobre o assunto. 
-Esquema de cores: Complementar, indicando o contraste buscando entre criatividade(cor amarela) e segurança (cor azul) a7o ler o tema  do site.
-*/
-.tituloPagina{
-    background-color: #FFE433;
-    transition-duration: 1s;
-    text-align: center;
-    font-family: ;
+#grid-container{
+    display: grid;
+    grid-template-rows: 150px auto 200px;
+    grid-template-columns: auto 300px;
+    grid-template-areas: 
+    "menu menu"
+    "conteudo anuncio"
+    "rodape rodape";
     
 }
-.paragrafo{
-    background-color:#2C14CC;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
+#grid-container div{
+   display: flex;
 }
-body{
-    background-color: #2C14CC;
+
+#grid-container nav{
+    grid-area: menu;
 }
-.exemplos{
-    background-color: #FFE433;
-    transition-duration: 1s;
-    width:40%;
-    font-family: 'Courier New', Courier, monospace;
+#grid-container main{
+    grid-area: conteudo;
 }
-.exemplos:hover{
-    width:100%;
+#grid-container aside{
+    grid-area: anuncio;
 }
-.fonte{
-    background-color: #FFE433;
-    width: 30%;
+#grid-container footer{
+    grid-area: rodape;
 }
-.tiposAplicativos{
-    background-color: #FFE433;
-    width: 27%;
+nav{
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+}
+.anuncio{
+    display: flex;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+aside{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+main{
+    background-color: aquamarine;
+}
+footer{
+    background-color: blueviolet;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
 }
