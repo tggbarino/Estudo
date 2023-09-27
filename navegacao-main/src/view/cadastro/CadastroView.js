@@ -15,13 +15,17 @@ const CadastroView = ({navigation})=>{
             <TextInput style={style.input} placeholder="Sexo"></TextInput>
             <TextInput style={style.input}placeholder="Cep"></TextInput>
             <TextInput style={style.input} placeholder="Endereco"></TextInput>
-            <TouchableOpacity 
+            <TouchableOpacity style ={style.titlecadastro}>
+                <Text style={style.texto}                >CADASTRAR</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style ={style.titleentrar}
             onPress={ ()=>{ 
                 navigation.navigate('telaInicial') 
                 } }>
-                <Text style ={style.titlesair}
-                >SAIR</Text>
-            </TouchableOpacity>
+                   <Text style={style.texto}
+                >SAIR</Text> 
+             </TouchableOpacity>
         </View>
     )
 }
@@ -38,20 +42,47 @@ const style = StyleSheet.create({
         alignItems: 'center',
     },
     input:{
-        width: '43%',
+        width: '83%',
         textAlign: 'center',
         marginTop: '2%',
         margin: '2%'
     },
-    titlesair:{
+    titleentrar:{
         backgroundColor: 'red',
-        width: '20%',
-        padding: '4%',
-        width: '43%',
-        marginTop: '20%',
-        
-    }
+        width: 350,
+        display:'flex',
+        height: '05%',
+        marginTop: 45,
+        textAlign:'center',
+        justifyContent: 'center',
+        alignItems:'center',
+        borderRadius: 40,
+        borderBottomLeftRadius:15,
+        borderBottomRightRadius: 15,
+        borderTopLeftRadius: 15,
+        borderTopRightRadius: 15,
 
+    },
+    texto:{
+        color: 'white',
+        fontSize: 20,
+
+    },
+    titlecadastro:{
+        backgroundColor: 'green',
+        width: 350,
+        display:'flex',
+        height: '05%',
+        textAlign:'center',
+        justifyContent: 'center',
+        alignItems:'center',
+        marginTop: 45,
+        borderRadius: 40,
+        borderBottomLeftRadius:15,
+        borderBottomRightRadius: 15,
+        borderTopLeftRadius: 15,
+        borderTopRightRadius: 15,
+    }
 
     }
 )
